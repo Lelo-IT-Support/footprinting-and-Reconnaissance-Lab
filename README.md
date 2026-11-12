@@ -14,8 +14,8 @@ This practical exercise demonstrates introductory footprinting and reconnaissanc
 - Zenmap / Nmap
 - WHOIS
 - WhatWeb
-- `nslookup`
-- `curl`
+- nslookup
+- curl
 - WAFW00F
 - DNSRecon
 
