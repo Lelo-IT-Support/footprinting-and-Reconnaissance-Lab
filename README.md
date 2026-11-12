@@ -80,6 +80,24 @@ The Zenmap screenshot shows a Quick Scan using an Nmap command beginning `nmap -
 
 **Evidence:** `Evidence/01-Zenmap-Network-Topology.png`
 
+### 3.2 WHOIS Domain Registration
+![WHOIS Domain Registration](Evidence/02-WHOIS-Domain-Registration.png)
+
+### 3.3 WhatWeb Technology Fingerprinting
+![WhatWeb Technology Fingerprinting](Evidence/03-WhatWeb-Technology-Fingerprinting.png)
+
+### 3.4 DNS Resolution
+![NSLookup DNS Resolution](Evidence/04-NSLookup-DNS-Resolution.png)
+
+### 3.5 HTTP Response Headers
+![Curl HTTP Response Headers](Evidence/05-Curl-HTTP-Response-Headers.png)
+
+### 3.6 Firewall Detection
+![WAFW00F Firewall Detection](Evidence/06-WAFW00F-Firewall-Detection.png)
+
+### 3.7 DNS Enumeration
+![DNSRecon DNS Enumeration](Evidence/07-DNSRecon-DNS-Enumeration.png)
+
 ## 5. Risk Analysis / Impact
 These screenshots document information-gathering activities, not confirmed exploitation or compromise. General considerations:
 - Public registration and DNS information can help an organisation understand its external information exposure.
