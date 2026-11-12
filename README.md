@@ -111,5 +111,5 @@ The exercise demonstrates introductory footprinting and reconnaissance using WHO
 
 ## Repository contents
 - `README.md` – overview and activity index.
-- `Evidence/` – seven practical screenshots.
-- `Reports/Practical-Report.md` – report following the lecture headings.
+- `Evidence/` – eight practical screenshots.
+- `Reports/Practical-Report.md` – report following the lectures intructions.
