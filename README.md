@@ -33,6 +33,7 @@ The `Evidence/` folder contains seven original screenshots:
 
 ### 4.1 Footprinting & Reconnaissance
 
+
 ### 4.2 WHOIS lookup
 **Command:** `whois networkwalks.com`
 
@@ -68,18 +69,19 @@ The visible WAFW00F output reports ModSecurity (SpiderLabs). This is the tool's 
 
 ![WAFW00F Firewall Detection](Evidence/06-WAFW00F-Firewall-Detection.png) 
 
-### 4.2 Network Scanning with Zenmap
-The Zenmap screenshot shows a Quick Scan using an Nmap command beginning `nmap -T4 -F` against a private local-network target. The topology view displays three discovered hosts and a localhost node. Some IP addresses are obscured, so they are not transcribed. The screenshot does not establish that any host was vulnerable or identify unshown operating systems or services.
-
-**Evidence:** `Evidence/01-Zenmap-Network-Topology.png`
-
-
 ### 3.7 DNS enumeration
 **Command:** `dnsrecon -d networkwalks.com`
 
 The visible output includes SOA, NS, MX, A, TXT and SRV record enumeration. The screenshot is partially truncated, so no unseen records or results are claimed.
 
 ![DNSRecon DNS Enumeration](Evidence/07-DNSRecon-DNS-Enumeration.png)
+
+
+### 4.2 Network Scanning with Zenmap
+The Zenmap screenshot shows a Quick Scan using an Nmap command beginning `nmap -T4 -F` against a private local-network target. The topology view displays three discovered hosts and a localhost node. Some IP addresses are obscured, so they are not transcribed. The screenshot does not establish that any host was vulnerable or identify unshown operating systems or services.
+
+**Evidence:** `Evidence/01-Zenmap-Network-Topology.png`
+![Zenmap Network Topology](Evidence/01-Zenmap-Network-Topology.png)
 
 ## 5. Risk Analysis / Impact
 These screenshots document information-gathering activities, not confirmed exploitation or compromise. General considerations:
