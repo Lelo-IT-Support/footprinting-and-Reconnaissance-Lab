@@ -33,69 +33,52 @@ The `Evidence/` folder contains seven original screenshots:
 
 ### 4.1 Footprinting & Reconnaissance
 
-#### WHOIS lookup
+### 4.2 WHOIS lookup
 **Command:** `whois networkwalks.com`
 
 The screenshot shows registration information including registrar, registration dates, nameservers and domain-status details. Personal/contact details are not reproduced here.
 
-**Evidence:** `Evidence/02-WHOIS-Domain-Registration.png`
+![WHOIS Domain Registration](Evidence/02-WHOIS-Domain-Registration.png)
 
-#### WhatWeb technology fingerprinting
+### 4.3  WhatWeb technology fingerprinting
 **Command:** `whatweb networkwalks.com`
 
 The visible output identifies technologies and characteristics including Apache, Bootstrap and WordPress. Fingerprinting reflects information observable at the time and does not, by itself, prove a vulnerability.
 
-**Evidence:** `Evidence/03-WhatWeb-Technology-Fingerprinting.png`
+![WhatWeb Technology Fingerprinting](Evidence/03-WhatWeb-Technology-Fingerprinting.png)
 
-#### DNS lookup
+### 4.4  DNS lookup
 **Command:** `nslookup networkwalks.com`
 
 The screenshot shows a DNS query returning an IPv4 address through the configured resolver. DNS responses can change over time.
 
-**Evidence:** `Evidence/04-NSLookup-DNS-Resolution.png`
+![NSLookup DNS Resolution](Evidence/04-NSLookup-DNS-Resolution.png)
 
-#### HTTP response-header inspection
+### 4.5 HTTP response-header inspection
 **Command:** `curl -I https://networkwalks.com`
 
 The screenshot shows an HTTP/2 200 response and returned headers. Cookie and potentially sensitive values are redacted in the supplied evidence.
 
-**Evidence:** `Evidence/05-Curl-HTTP-Response-Headers.png`
+![Curl HTTP Response Headers](Evidence/05-Curl-HTTP-Response-Headers.png)
 
-#### WAF detection
+### 4.6  WAF detection
 **Command:** `wafw00f networkwalks.com`
 
 The visible WAFW00F output reports ModSecurity (SpiderLabs). This is the tool's fingerprinting result, not a complete assessment of the site's security configuration.
 
-**Evidence:** `Evidence/06-WAFW00F-Firewall-Detection.png`
-
-#### DNS enumeration
-**Command:** `dnsrecon -d networkwalks.com`
-
-The visible output includes SOA, NS, MX, A, TXT and SRV record enumeration. The screenshot is partially truncated, so no unseen records or results are claimed.
-
-**Evidence:** `Evidence/07-DNSRecon-DNS-Enumeration.png`
+![WAFW00F Firewall Detection](Evidence/06-WAFW00F-Firewall-Detection.png) 
 
 ### 4.2 Network Scanning with Zenmap
 The Zenmap screenshot shows a Quick Scan using an Nmap command beginning `nmap -T4 -F` against a private local-network target. The topology view displays three discovered hosts and a localhost node. Some IP addresses are obscured, so they are not transcribed. The screenshot does not establish that any host was vulnerable or identify unshown operating systems or services.
 
 **Evidence:** `Evidence/01-Zenmap-Network-Topology.png`
 
-### 3.2 WHOIS Domain Registration
-![WHOIS Domain Registration](Evidence/02-WHOIS-Domain-Registration.png)
 
-### 3.3 WhatWeb Technology Fingerprinting
-![WhatWeb Technology Fingerprinting](Evidence/03-WhatWeb-Technology-Fingerprinting.png)
+### 3.7 DNS enumeration
+**Command:** `dnsrecon -d networkwalks.com`
 
-### 3.4 DNS Resolution
-![NSLookup DNS Resolution](Evidence/04-NSLookup-DNS-Resolution.png)
+The visible output includes SOA, NS, MX, A, TXT and SRV record enumeration. The screenshot is partially truncated, so no unseen records or results are claimed.
 
-### 3.5 HTTP Response Headers
-![Curl HTTP Response Headers](Evidence/05-Curl-HTTP-Response-Headers.png)
-
-### 3.6 Firewall Detection
-![WAFW00F Firewall Detection](Evidence/06-WAFW00F-Firewall-Detection.png)
-
-### 3.7 DNS Enumeration
 ![DNSRecon DNS Enumeration](Evidence/07-DNSRecon-DNS-Enumeration.png)
 
 ## 5. Risk Analysis / Impact
