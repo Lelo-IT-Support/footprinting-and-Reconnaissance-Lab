@@ -102,7 +102,11 @@ No severity ratings or exploitable vulnerabilities are assigned because the scre
 7. Store evidence securely and redact private IPs, tokens, cookies and personal details before public sharing.
 8. Repeat assessments periodically within the approved scope and document verified findings separately.
 
-## 8. Conclusion
+## 8. Report
+[PENETRATION TESTING REPORT.docx](https://github.com/user-attachments/files/34766670/PENETRATION.TESTING.REPORT.docx)
+
+
+## 9. Conclusion
 The exercise demonstrates introductory footprinting and reconnaissance using WHOIS, WhatWeb, nslookup, curl, WAFW00F and DNSRecon, together with local network scanning and topology visualisation using Zenmap/Nmap. The screenshots provide evidence of the commands and outputs visible during the exercise. The work highlights the value of reconnaissance and the importance of authorisation, careful interpretation and responsible handling of collected information.
 
 ## Repository contents
