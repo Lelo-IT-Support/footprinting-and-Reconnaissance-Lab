@@ -77,13 +77,12 @@ The visible output includes SOA, NS, MX, A, TXT and SRV record enumeration. The 
 ![DNSRecon DNS Enumeration](Evidence/07-DNSRecon-DNS-Enumeration.png)
 
 
-### 4.7 Network Scanning with Zenmap
+### 5. Network Scanning with Zenmap
 The Zenmap screenshot shows a Quick Scan using an Nmap command beginning `nmap -T4 -F` against a private local-network target. The topology view displays three discovered hosts and a localhost node. Some IP addresses are obscured, so they are not transcribed. The screenshot does not establish that any host was vulnerable or identify unshown operating systems or services.
 
-**Evidence:** `Evidence/01-Zenmap-Network-Topology.png`
 ![Zenmap Network Topology](Evidence/01-Zenmap-Network-Topology.png)
 
-## 5. Risk Analysis / Impact
+## 6. Risk Analysis / Impact
 These screenshots document information-gathering activities, not confirmed exploitation or compromise. General considerations:
 - Public registration and DNS information can help an organisation understand its external information exposure.
 - Technology fingerprinting can reveal platforms and server technologies that should be kept updated.
@@ -93,7 +92,7 @@ These screenshots document information-gathering activities, not confirmed explo
 
 No severity ratings or exploitable vulnerabilities are assigned because the screenshots do not establish them.
 
-## 6. Recommendations
+## 7. Recommendations
 1. Obtain written authorisation and define scope before active scanning.
 2. Keep servers, CMS platforms, plugins and frameworks patched.
 3. Review HTTP security headers and secure cookie attributes.
@@ -103,7 +102,7 @@ No severity ratings or exploitable vulnerabilities are assigned because the scre
 7. Store evidence securely and redact private IPs, tokens, cookies and personal details before public sharing.
 8. Repeat assessments periodically within the approved scope and document verified findings separately.
 
-## 7. Conclusion
+## 8. Conclusion
 The exercise demonstrates introductory footprinting and reconnaissance using WHOIS, WhatWeb, nslookup, curl, WAFW00F and DNSRecon, together with local network scanning and topology visualisation using Zenmap/Nmap. The screenshots provide evidence of the commands and outputs visible during the exercise. The work highlights the value of reconnaissance and the importance of authorisation, careful interpretation and responsible handling of collected information.
 
 ## Repository contents
